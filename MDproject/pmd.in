@@ -1,0 +1,29 @@
+1
+2 2 2
+4 4 4 
+1.587401
+0.4
+0.003
+10000
+100
+--------------------------------------------
+mdmode: 0=Start from Crystal, 
+        1=NVE RUN, 
+        4=Temperature control ,
+        2=Save last frame for g(r)/n(r) calculation
+
+vproc[0],vproc[1],vproc[2] : Number  of Processors in X,Y,Z direction
+
+InitUcell[0],InitUcell[1],InitUcell[2]: Crystallite size percore 
+
+Lattice Constant
+ 
+InitTemp
+
+Time step for MD run  :DeltaT
+
+Number of MD steps :tepLimit 
+
+Frequency of printing results :tepAvg
+
+Note : all unites are in reduced unit 

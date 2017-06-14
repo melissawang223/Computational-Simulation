@@ -1,0 +1,26 @@
+For gr/nr calculation 
+1) First rum the molecular dynamics code using the input parameter in your pmd.in file 
+   2
+   2 2 2
+   4 4 4
+   1.587401
+   1.0
+   0.003
+   20000
+   100
+
+2) once your program is finished  you will see in your data folder have coordinate files have been saved 
+   The name of the coordinate file in data folder will look like this :
+   pmd00timestep , where timestep  is md-timestep 
+    
+3) In the same folder where you ran your MD program ,run gr.c program by typing ./gr
+
+4) When you will run /gr you wil be asked to give four intputs
+   Number of processors  Starttimestep increment Finishtimestep  (eg 8 1 1 10)
+   Here Numbe of processors is the number of processors used in your MD program (here its 8)
+        Starttimestep : the start timestep for your gr calculate (it timestep from pmd00timestep in data folder) 
+        Finishtimestep: the finish timestep for your gr calculate (it timestep from pmd00timestep in data folder) 
+        Note : Finishtimestep should be greater then Starttimestep
+        Increment : it should be 1 in your program 
+
+5) Plot gr and nr from gr.d
